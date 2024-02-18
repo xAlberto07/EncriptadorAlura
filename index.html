@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Encriptador - Challenge</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+    </head>
+    <body class="principal">
+        <header>
+            <img src="img/logoAlura.svg" alt="" class="logo">
+        </header>
+        <script src="funcion.js"></script>
+        <main> 
+                <section class="Encriptar">
+                    <textarea placeholder="Ingresa el texto aqui" cols="30" rows="10" id="escribirTexto" name="escribirTexto"></textarea>
+                    <div class="boton">
+                        <!--Se agrega funcion Encriptar para que cuando el usuario haga click en el boton se copie el texto-->
+                        <button id="btn-encriptar" onclick="Encriptar()">Encriptar</button>
+                        <button id="btn-desencriptar" onclick="Desencriptar()">Desencriptar</button>
+                    </div>
+                </section>
+                <section id="Desencriptar">
+                    <img src="img/Muñeco.svg" alt="" class="muneco">
+                    <div class="msjResultado">
+                        <h3>Ningun mensaje fue encontrado</h3>
+                        <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                    </div>
+                </section>
+        </main>
+    </body>
+</html>
